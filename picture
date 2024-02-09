@@ -1,0 +1,27 @@
+import sys
+from io import BytesIO
+# Этот класс поможет нам сделать картинку из потока байт
+
+import requests
+from PIL import Image
+
+
+# Пусть наше приложение предполагает запуск:
+# python search.py Москва, ул. Ак. Королева, 12
+# Тогда запрос к геокодеру формируется следующим образом:
+def k():
+    with open("const", encoding="utf-8") as f:
+        data = f.readlines()
+        lon, lat, delta = data[1].split()
+
+    params = {
+        "ll": ",".join([lon, lat]),
+        "spn": ",".join([delta, delta]),
+        "l": "map"
+    }
+    map_api_server = "http://static-maps.yandex.ru/1.x/"
+    # ... и выполняем запрос
+    response = requests.get(map_api_server, params=params)
+
+    Image.open(BytesIO(
+        response.content)).show()
