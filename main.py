@@ -2,9 +2,10 @@ import sys
 
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5 import uic
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QImage
 
 from consts import *
+from picture import k
 
 
 class MyWidget(QWidget):
@@ -23,7 +24,9 @@ class MyWidget(QWidget):
         )
 
         self.pict.resize(W, H)
-        pixmap = QPixmap(f'pict1.jpg')
+
+        ans = k()
+        pixmap = QPixmap(QImage(ans))
         pixmap = pixmap.scaled(W, H)
         self.pict.setPixmap(pixmap)
 
