@@ -1,11 +1,12 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5 import uic
-from PyQt5.QtGui import QPixmap, QImage
+from PyQt5.Qt import QImage
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtWidgets import QApplication, QWidget
 
 from consts import *
-from picture import k
+from util import get_pict
 
 
 class MyWidget(QWidget):
@@ -15,8 +16,8 @@ class MyWidget(QWidget):
         self.loadInfo()
 
     def loadInfo(self):
-        self.setFixedSize(*SIZE)
-        self.setWindowTitle('')
+        self.setGeometry(1000, 200, *SIZE)
+        self.setWindowTitle('yandex map')
         self.setStyleSheet(
             "background-color: rgb(50, 50, 50);"
             "color: rgb(255, 255, 255);"
@@ -25,16 +26,16 @@ class MyWidget(QWidget):
 
         self.pict.resize(W, H)
 
-        ans = k()
-        pixmap = QPixmap(QImage(ans))
-        pixmap = pixmap.scaled(W, H)
+        path = get_pict(lon, lat, spn_lon, spn_lat)
+        pixmap = QPixmap(QImage(path))
+
         self.pict.setPixmap(pixmap)
 
 
 def main():
     app = QApplication(sys.argv)
     ex = MyWidget()
-    ex.showMaximized()
+    ex.show()
     sys.exit(app.exec())
 
 

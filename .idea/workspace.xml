@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="Append Window">
-      <change afterPath="$PROJECT_DIR$/33.py" afterDir="false" />
+    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="For test on onother comp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picture" beforeDir="false" afterPath="$PROJECT_DIR$/picture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.ui" beforeDir="false" afterPath="$PROJECT_DIR$/map.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,8 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager" selected="Python.main">
@@ -120,11 +123,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707487815672</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="For test on onother comp">
+      <option name="closed" value="true" />
+      <created>1707491372998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707491372998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Append Window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Append Window" />
+    <MESSAGE value="For test on onother comp" />
+    <option name="LAST_COMMIT_MESSAGE" value="For test on onother comp" />
   </component>
 </project>
