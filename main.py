@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import QApplication, QWidget
 from consts import *
 from util import get_pict
 
-spn = 0.004
+spn = 90
 
 
 class MyWidget(QWidget):
@@ -32,7 +32,7 @@ class MyWidget(QWidget):
 
     def keyPressEvent(self, event):
         global spn
-        if spn + d < 180 and event.key() == Qt.Key_Up:
+        if spn + d < 90 and event.key() == Qt.Key_Up:
             spn = round(spn + d, 3)
             self.update_pict(spn)
             print(spn)
