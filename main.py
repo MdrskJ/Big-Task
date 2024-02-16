@@ -9,13 +9,12 @@ from PyQt5.QtWidgets import QApplication, QWidget
 from consts import *
 from util import get_pict
 
-spn = 90
-
 
 class MyWidget(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi(ui_path, self)
+        self.z = z
         self.loadInfo()
 
     def loadInfo(self):
@@ -27,23 +26,25 @@ class MyWidget(QWidget):
             "border: 0px solid #094065;"
         )
 
-        self.pict.resize(W, H)
-        self.update_pict(spn)
+        self.pict.resize(W - 20, H - 20)
+        self.pict.move(10, 10)
+        self.update_pict(z)
 
     def keyPressEvent(self, event):
-        global spn
-        if spn + d < 90 and event.key() == Qt.Key_Up:
-            spn = round(spn + d, 3)
-            self.update_pict(spn)
-            print(spn)
+        if event.key() == Qt.Key_Up and self.z + d <= 21:
+            self.z += d
+            self.update_pict(self.z)
+            print(self.z)
 
-        if spn - d > 0.001 and event.key() == Qt.Key_Down:
-            spn = round(spn - d, 3)
-            self.update_pict(spn)
-            print(spn)
+        if event.key() == Qt.Key_Down and self.z - d >= 0:
+            self.z -= d
+            self.update_pict(self.z)
+            print(self.z)
 
-    def update_pict(self, new_spn: float):
-        path = get_pict(lon, lat, str(new_spn))
+        return
+
+    def update_pict(self, new_z: int):
+        path = get_pict(lon, lat, str(new_z))
         pixmap = QPixmap(QImage(path))
         self.pict.setPixmap(pixmap)
 
