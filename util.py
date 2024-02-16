@@ -6,7 +6,7 @@ from PIL import Image
 
 
 def get_pict(lon: str, lat: str, z: str):
-    map_path = f"data/map_image_spn={z}"
+    map_path = f"data/map_image_ll={lon},{lat},z={z}"
     if os.path.isfile(map_path):
         return map_path
 
