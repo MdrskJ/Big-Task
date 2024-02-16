@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="Commit with changes to task number 2, version: 4">
+    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="Commit with changes to task number 2, version: 5, file name depends on map params">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708063905174</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit with changes to task number 2, version: 5, file name depends on map params">
+      <option name="closed" value="true" />
+      <created>1708064492988</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708064492988</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +205,7 @@
     <MESSAGE value="Commit with changes to task number 2, version: 2" />
     <MESSAGE value="Commit with changes to task number 2, version: 3, file path is change" />
     <MESSAGE value="Commit with changes to task number 2, version: 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit with changes to task number 2, version: 4" />
+    <MESSAGE value="Commit with changes to task number 2, version: 5, file name depends on map params" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit with changes to task number 2, version: 5, file name depends on map params" />
   </component>
 </project>

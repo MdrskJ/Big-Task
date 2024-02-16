@@ -31,12 +31,12 @@ class MyWidget(QWidget):
         self.update_pict(z)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Up and self.z + d <= 21:
+        if event.key() == Qt.Key_PageUp and self.z + d <= 21:
             self.z += d
             self.update_pict(self.z)
             print(self.z)
 
-        if event.key() == Qt.Key_Down and self.z - d >= 0:
+        if event.key() == Qt.Key_PageDown and self.z - d >= 0:
             self.z -= d
             self.update_pict(self.z)
             print(self.z)
