@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="Commit with changes to task number 2, version: 2">
+    <list default="true" id="801013a0-3a30-442b-9663-f3d668440119" name="Changes" comment="Commit with changes to task number 2, version: 4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708063582130</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit with changes to task number 2, version: 3, file path is change">
+      <option name="closed" value="true" />
+      <created>1708063801643</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708063801643</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit with changes to task number 2, version: 4">
+      <option name="closed" value="true" />
+      <created>1708063905174</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708063905174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +196,8 @@
     <MESSAGE value="Commit with changes to task number 2, added pgUp and pgDown combinations" />
     <MESSAGE value="Commit with changes to task number 2, problems solve" />
     <MESSAGE value="Commit with changes to task number 2, version: 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit with changes to task number 2, version: 2" />
+    <MESSAGE value="Commit with changes to task number 2, version: 3, file path is change" />
+    <MESSAGE value="Commit with changes to task number 2, version: 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit with changes to task number 2, version: 4" />
   </component>
 </project>
